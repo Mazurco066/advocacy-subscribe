@@ -2,17 +2,29 @@
 import Head from 'next/head'
 
 // Components
-import { ContactForm } from '../components'
+import { 
+  About,
+  ContactForm,
+  Featured,
+  Mission,
+  Quoted,
+  Team
+} from '../components'
 
 // Page
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Home Advocacia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Featured />
+      <About />
+      <Mission />
+      <Team />
+      <Quoted />
       <ContactForm />
-    </div>
+    </>
   )
 }

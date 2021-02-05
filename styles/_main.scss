@@ -1,11 +1,15 @@
 // Librarias and configs
+@import "variables";
 @import "bootstrap";
 @import "animations";
 @import "fonts";
 
 // Components
+@import "components/header";
+@import "components/input";
 
 // Pages
 @import "pages/index";
 
 // Reset CSS
+@import "reset";
