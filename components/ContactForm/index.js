@@ -51,6 +51,7 @@ export const ContactForm = () => {
                 id="name"
                 name="name"
                 placeholder="Nome"
+                className="form-control"
                 value={formik.values.name}
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -63,6 +64,7 @@ export const ContactForm = () => {
                 id="email"
                 name="email"
                 placeholder="E-mail"
+                className="form-control"
                 value={formik.values.email}
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -75,6 +77,7 @@ export const ContactForm = () => {
                 id="phone"
                 name="phone"
                 placeholder="Telefone"
+                className="form-control"
                 value={formik.values.phone}
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -87,6 +90,7 @@ export const ContactForm = () => {
                 id="message"
                 name="message"
                 placeholder="Mensagem"
+                className="form-control"
                 value={formik.values.message}
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
@@ -94,7 +98,9 @@ export const ContactForm = () => {
             </Col>
           </Row>
           <Row>
-            <Button type="submit" text="Enviar formulário"/>
+            <Col lg="12" md="12" sm="12">
+              <Button type="submit" text="Enviar formulário"/>
+            </Col>
           </Row>
         </Form>
       </Container>

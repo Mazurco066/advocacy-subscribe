@@ -1,5 +1,22 @@
 #navbar {
-  background-color: $color-primary;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+
+  .container {
+    flex-wrap: wrap;
+    @media (max-width: 420px) {
+      justify-content: center;
+    }
+  }
+
+  #responsive-navbar-nav {
+    @media (max-width: 420px) {
+      justify-content: center!important;
+    }
+  }
 
   .logo {
     max-width: 200px;

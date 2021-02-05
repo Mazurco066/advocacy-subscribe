@@ -5,11 +5,21 @@ import React from 'react'
 import { Button as BootstrapButton } from 'react-bootstrap'
 
 // Component
-export const Button = ({ text, type = 'button' }) => {
+export const Button = ({ 
+  text, 
+  type = 'button', 
+  variant = 'primary',
+  onClick = () => {}
+}) => {
 
   // JSX
   return (
-    <BootstrapButton type={type}>
+    <BootstrapButton
+      className="base-button"
+      onClick={onClick}
+      variant={variant}
+      type={type}
+    >
       {text}
     </BootstrapButton>
   )

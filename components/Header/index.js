@@ -21,9 +21,9 @@ export const Header = () => {
           className="justify-content-end"
         >
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link href="tel:19999999999">Ligue Agora</Nav.Link>
+            <Nav.Link eventKey={2} href="#contact-form">
+              Contato
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

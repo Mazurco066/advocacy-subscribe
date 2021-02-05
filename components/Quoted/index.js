@@ -2,12 +2,15 @@
 import React from 'react'
 
 // Components
+import { Container } from 'react-bootstrap'
 
 // Component
 export const Quoted = () => {
   return (
     <section>
-      <p>Quoted</p>
+      <Container>
+        <p>Quoted</p>
+      </Container>
     </section>
   )
 }

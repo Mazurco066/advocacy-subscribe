@@ -2,12 +2,15 @@
 import React from 'react'
 
 // Components
+import { Container } from 'react-bootstrap'
 
 // Component
 export const Mission = () => {
   return (
     <section>
-      <p>Mission</p>
+      <Container>
+        <p>Mission</p>
+      </Container>
     </section>
   )
 }

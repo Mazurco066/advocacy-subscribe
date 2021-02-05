@@ -1,0 +1,25 @@
+#footer {
+  padding: 40px 0;
+
+  p, a, span {
+    color: #212121;
+  }
+
+  .logo {
+    max-width: 200px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+
+  .social-link {
+    margin-right: 1rem;
+
+    &:hover {
+      color: $color-primary;
+    }
+    
+    &:last-child {
+      margin-right:  0;
+    }
+  }
+}

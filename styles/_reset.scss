@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,6 +33,11 @@ input, input:after, input:before, textarea {
   -moz-user-select: initial;
   -ms-user-select: initial;
   user-select: initial;
+}
+
+::selection {
+  color: #212121;
+  background: $color-primary;
 }
 
 .link-disabled {
