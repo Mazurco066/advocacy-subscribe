@@ -3,6 +3,7 @@ import React from 'react'
 
 // Components
 import { Container, Row, Col } from 'react-bootstrap'
+import { Button } from '../Button'
 import { SectionTitle } from '../SectionTitle'
 import { segments } from '../../utils'
 
@@ -15,7 +16,7 @@ export const About = () => {
     <section id="about-section">
       <SectionTitle title="Nossa área de atuação" />
       <Container>
-        <Row>
+        <Row className="mb-5">
           {segments.map(({ description, iconPath, title }, i) => (
             <Col key={i} lg={numberOfCols} md="12" sm="12">
               <div className="d-flex flex-column align-items-center segment-item">
@@ -31,6 +32,30 @@ export const About = () => {
               </div>
             </Col>
           ))}
+        </Row>
+      </Container>
+      <SectionTitle title="Sobre Vercel Advocacia" />
+      <Container>
+        <Row>
+          <Col md="6" lg="6" sm="12">
+            <div className="about-image">
+              <img src="/images/office.jpg" alt="Office"/>
+            </div>
+          </Col>
+          <Col md="6" lg="6" sm="12">
+            <p className="text-indent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna 
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p className="text-indent mb-3">
+              Nossa advocacia fica localizada em: Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit.
+            </p>
+            <Button text="Ver no Mapa" />
+            <Button text="Conversar com um Advogado" />
+          </Col>
         </Row>
       </Container>
     </section>
