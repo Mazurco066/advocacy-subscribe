@@ -5,6 +5,7 @@
 @import "fonts";
 
 // Components
+@import "components/about";
 @import "components/button";
 @import "components/contactForm.scss";
 @import "components/featured";
@@ -17,3 +18,4 @@
 
 // Reset CSS
 @import "reset";
+@import "layout";
