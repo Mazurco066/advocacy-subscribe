@@ -9,7 +9,7 @@ export const Quoted = () => {
   return (
     <section>
       <Container>
-        <p>Quoted</p>
+        <p>Quoted - Under development</p>
       </Container>
     </section>
   )
