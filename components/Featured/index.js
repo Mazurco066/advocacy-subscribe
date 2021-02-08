@@ -23,7 +23,7 @@ export const Featured = () => {
               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
               laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <Button text="Entre em Contato"/>
+            <Button text="Entrar em Contato"/>
           </Col>
         </Row>
       </Container>
