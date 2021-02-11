@@ -27,7 +27,9 @@ export const Header = () => {
           className="justify-content-end"
         >
           <Nav>
-            <Nav.Link href="#contact-section">Entre em Contato</Nav.Link>
+            <Nav.Link href="#contact-section">
+              Entre em Contato
+            </Nav.Link>
             <Nav.Link className="nav-starred" eventKey={2} href="tel:19999999999">
               Ligue Agora
             </Nav.Link>
