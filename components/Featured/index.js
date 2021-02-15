@@ -1,10 +1,10 @@
 // Libs
 import React from 'react'
-import Fade from 'react-reveal/Fade'
+// import Fade from 'react-reveal/Fade'
 
 // Components
 //import { Container, Row, Col } from 'react-bootstrap'
-import { Parallax, Background } from 'react-parallax'
+import { Parallax } from 'react-parallax'
 //import { Button } from '../Button'
 
 // Component

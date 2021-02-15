@@ -1,6 +1,7 @@
 // Page dependencies
 import Head from 'next/head'
 import { useWindowDimensions } from '../hooks'
+import { fetchEntries } from '../utils'
 
 // Components
 import { 
@@ -33,4 +34,19 @@ export default function Home() {
       <ContactForm />
     </div>
   )
+}
+
+// Runs on build process to load static data
+export async function getStaticProps() {
+  const r = await fetchEntries()
+  const filtered = r
+    .filter(({ sys: { contentType: { sys: { id } } } }) => 
+      ['carrers'].includes(id)
+    )
+    .map(({ fields }) => ({
+      ...fields, imgUrl:
+      fields.imgUrl.fields.file.url
+    }))
+  console.log('[DEBUG] CMS: ', filtered)
+  return { props: { cmsData: filtered } }
 }
