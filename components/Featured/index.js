@@ -3,25 +3,24 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 
 // Components
-import { Container, Row, Col } from 'react-bootstrap'
-// import { Parallax, Background } from 'react-parallax'
-import { Button } from '../Button'
+//import { Container, Row, Col } from 'react-bootstrap'
+import { Parallax, Background } from 'react-parallax'
+//import { Button } from '../Button'
 
 // Component
 export const Featured = () => {
   return (
     <section id="featured-banner">
-      {/* <Parallax
+      <Parallax
         bgImage="/images/featured-banner.jpg"
         bgImageAlt="the cat"
         strength={500}
       >
-        Put some text content here
-        or even an empty div with fixed dimensions
-        to have a height for the parallax.
-        <div style={{ height: '100vh' }} />
-      </Parallax> */}
-      <div className="color-overlay"></div>
+        <div style={{ height: '100vh' }}>
+          
+        </div>
+      </Parallax>
+      {/* <div className="color-overlay"></div>
       <Fade bottom>
         <Container>
           <Row>
@@ -40,7 +39,7 @@ export const Featured = () => {
             </Col>
           </Row>
         </Container>
-      </Fade>
+      </Fade> */}
     </section>
   )
 }
