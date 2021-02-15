@@ -4,6 +4,15 @@ body,
   height: 100%;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+
+  .pt-desktop {
+    padding-top: 57px;
+  }
+
+  .pt-mobile {
+    padding-top: 65px;
+  }
 }
 
 body {
