@@ -39,14 +39,10 @@ export default function Home() {
 // Runs on build process to load static data
 export async function getStaticProps() {
   const r = await fetchEntries()
-  const filtered = r
-    .filter(({ sys: { contentType: { sys: { id } } } }) => 
-      ['carrers'].includes(id)
-    )
-    .map(({ fields }) => ({
-      ...fields, imgUrl:
-      fields.imgUrl.fields.file.url
-    }))
-  console.log('[DEBUG] CMS: ', filtered)
+  const filtered = r.filter(
+    ({ sys: { contentType: { sys: { id } } } }) => ['carrers'].includes(id)
+  ).map(({ fields }) => ({
+    ...fields, imgUrl: fields.imgUrl.fields.file.url
+  }))
   return { props: { cmsData: filtered } }
 }
